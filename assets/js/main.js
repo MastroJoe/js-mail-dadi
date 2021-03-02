@@ -13,9 +13,18 @@ console.log(listaMail);
 var soldatino = false;
 
 for (var i = 0; i < listaMail.length; i++) {
-  if (listaMail[i] = mail) {
+  if (listaMail[i] == mail) {
     soldatino = true;
   }
 }
 
 // stampo il risultato del controllo
+var accettato = "Accesso Consentito";
+var negato = "Accesso Negato";
+
+
+if (soldatino) {
+  console.log(accettato);
+} else {
+  console.log(negato);
+}
