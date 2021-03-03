@@ -9,12 +9,13 @@ console.log(mail);
 var listaMail = ["random.mail@libero.it", "random.mail@gmail.com", "random.mail@yahoo.com", "random.mail@virgilio.it", "random.mail@tim.it"];
 console.log(listaMail);
 
-// controllo la lista delle mail
-var soldatino = false;
+// scorro la lista delle mail
+var sentinella = false;
 
 for (var i = 0; i < listaMail.length; i++) {
-  if (listaMail[i] == mail) {
-    soldatino = true;
+  if (listaMail[i] === mail) {
+    sentinella = true;
+    i = listaMail.lenght;
   }
 }
 
@@ -22,8 +23,7 @@ for (var i = 0; i < listaMail.length; i++) {
 var accettato = "Accesso Consentito";
 var negato = "Accesso Negato";
 
-
-if (soldatino) {
+if (sentinella) {
   console.log(accettato);
 } else {
   console.log(negato);
